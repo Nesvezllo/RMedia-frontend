@@ -1,0 +1,21 @@
+.categories {
+  height: 100px;
+  ul {
+    list-style: none;
+    padding: 0px;
+    li {
+      position: relative;
+      background: white;
+      padding: 15px 30px;
+      cursor: pointer;
+      border: 1px solid white;
+      transition: .2s ease-in-out;
+      z-index: 2;
+
+      &:hover {
+        border: 1px solid rgba(0, 0, 0, 0.26);
+      }
+
+    }
+  }
+}

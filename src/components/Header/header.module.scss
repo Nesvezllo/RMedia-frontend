@@ -1,0 +1,71 @@
+.header {
+  background-color: white;
+  height: 60px;
+  box-shadow: 0 0px 3px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 350px 0 200px;
+  margin-bottom: 70px;
+
+  a {
+    margin-right: 20px;
+    background: white;
+    font-weight: bold;
+    padding: 10px 30px;
+    border: 0px;
+    border-radius: 7px;
+    box-shadow: 0 0px 3px rgba(0, 0, 0, 0.219);
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0 0px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    &:active {
+      transform: translateY(1.5px);
+    }
+  }
+
+  .reg {
+    background: rgb(0, 153, 255);
+    p {
+      color: white;
+    }
+  }
+
+  .login {
+    display: flex;
+    a {
+      text-decoration: none;
+      font-size: 14px;
+      color: black;
+    }
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 0px 0px;
+
+    h2 {
+      margin-left: 5px;
+    }
+
+    &:hover {
+      box-shadow: 0 0px 0px;;
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+    img {
+      width: 35px;
+    }
+
+  }
+
+
+}

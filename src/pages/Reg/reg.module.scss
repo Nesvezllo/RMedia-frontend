@@ -1,0 +1,78 @@
+.regWrapper {
+  display: flex;
+  justify-content: center;
+  .reg {
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 30px 50px;
+    border: 0px;
+    border-radius: 10px;
+
+
+    form {
+      .inputBlock {
+        p {
+          width: 200px;
+          margin-top: 10px;
+          word-wrap: break-word;
+          font-size: 13px;
+          position: relative;
+          left: 5px;
+        }
+        .name {
+          font-size: 16px;
+        } 
+      }
+      .buttonBlock {
+        text-align: center;
+        button {
+          background-color: rgb(0, 153, 255);
+          color: white;
+          border: 0px;
+          border-radius: 8px;
+          padding: 13px 50px;
+          font-weight: bold;
+          font-size:  16px;
+          margin-top: 30px;
+          cursor: pointer;
+          box-shadow: 0 0px 3px rgba(0, 0, 0, 0.219);
+          transition: all .2s ease-in-out;
+          &:hover {
+            box-shadow: 0 0px 3px rgba(0, 0, 0, 0.5);;
+          }
+      
+          &:active {
+            transform: translateY(1.5px);
+          }
+      }
+    }
+  }
+
+
+    h1 {
+      margin-bottom: 30px;
+      font-size: 30px;
+    }
+
+    .inputBlock {
+      margin-bottom: 20px;
+      p {
+        margin-bottom: 7px;
+      }
+      input {
+        padding: 7px 60px 7px 15px;
+        border: 1px solid rgba(0, 0, 0, 0.247);
+        border-radius: 7px;
+        
+      }
+    }
+
+    img {
+      margin-bottom: 30px;
+    }
+  }
+}

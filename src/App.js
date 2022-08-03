@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import s from './App.module.scss';
+import { Routes, Route} from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+
+import Header from './components/Header/Header';
+import Home from './pages/Home/Home'
+import FullPost from './pages/FullPost/FullPost'
+import Login from './pages/Login/Login';
+import Reg from './pages/Reg/Reg'
+import CreatePost from './pages/createPost/CreatePost';
+import { fetchAuthMe, isAuthSelector } from './redux/slices/auth'
 
 function App() {
+  const dispatch = useDispatch();
+  const isAuth = useSelector(isAuthSelector)
+  
+  useEffect(() => {
+    dispatch(fetchAuthMe());
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={s.App}>
+      <Header />
+      <Routes>
+        <Route  path="/" element={<Home />} />
+        <Route path="/post/:id" element={<FullPost />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/post/:id/edit" element={<CreatePost />} />
+        <Route path="/reg" element={<Reg />} />
+        <Route path="/createpost" element={<CreatePost />} />
+      </Routes>
     </div>
   );
 }
