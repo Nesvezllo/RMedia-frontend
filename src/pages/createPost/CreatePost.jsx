@@ -126,7 +126,7 @@ const CreatePost = () => {
           {isEditing ? 'Сохранить' : 'Опубликовать'}
         </button>
         <a href="/">
-          <button className={s.button}>Отмена</button>
+          <button className={s.button_cancel}>Отмена</button>
         </a>
       </div>
     </div>

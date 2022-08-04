@@ -28,8 +28,34 @@
 .buttons {
   display: flex;
 
-  button {
+  .button {
+    background-color: rgb(0, 153, 255);
+    padding: 11px 30px;
+    color: white;
+    font-size: 18px;
+    border: 0px;
+    border-radius: 8px;
+    cursor: pointer;
     margin-right: 15px;
+
+    &_cancel {
+      background-color: white;
+      padding: 11px 30px;
+      color: black;
+      font-size: 18px;
+      border: 0px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-right: 15px;
+
+      &:active {
+        background-color: rgba(255, 255, 255, 0.719); 
+      }
+    }
+
+    &:active {
+      background-color: rgba(0, 153, 255, 0.719); 
+    }
   }
 }
 
@@ -38,6 +64,22 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 300px 0 0;
+
+  .page {
+    button {
+      background-color: rgb(0, 153, 255);
+      padding: 11px 30px;
+      color: white;
+      font-size: 18px;
+      border: 0px;
+      border-radius: 8px;
+      cursor: pointer;
+
+      &:active {
+        background-color: rgba(0, 153, 255, 0.719); 
+      }
+    }
+  }
 
   button {
     margin-right: 20px;
