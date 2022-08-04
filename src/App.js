@@ -9,11 +9,11 @@ import FullPost from './pages/FullPost/FullPost'
 import Login from './pages/Login/Login';
 import Reg from './pages/Reg/Reg'
 import CreatePost from './pages/createPost/CreatePost';
-import { fetchAuthMe, isAuthSelector } from './redux/slices/auth'
+import { fetchAuthMe} from './redux/slices/auth'
 
 function App() {
   const dispatch = useDispatch();
-  const isAuth = useSelector(isAuthSelector)
+
   
   useEffect(() => {
     dispatch(fetchAuthMe());

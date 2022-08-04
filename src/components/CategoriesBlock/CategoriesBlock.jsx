@@ -23,27 +23,27 @@ const CategoriesBlock = ({ setNewPosts, сhangeСategory }) => {
           <p>Популярное</p>
           <Chevron className={s.chevron} />
         </li>
-        <li onClick={(e) =>  сhangeСategory(e) & setNewPosts(false)}>
+        <li onClick={(e) =>  сhangeСategory(e) & setNewPosts(true)}>
           <Person />
           <p>Личный блог</p>
           <Chevron className={s.chevron} />
         </li>
-        <li onClick={(e) =>  сhangeСategory(e) & setNewPosts(false)}>
+        <li onClick={(e) =>  сhangeСategory(e) & setNewPosts(true)}>
           <Ball />
           <p>Спорт</p>
           <Chevron className={s.chevron} />
         </li>
-        <li onClick={(e) =>  сhangeСategory(e) & setNewPosts(false)}>
+        <li onClick={(e) =>  сhangeСategory(e) & setNewPosts(true)}>
           <Laptop />
           <p>IT</p>
           <Chevron className={s.chevron} />
         </li>
-        <li onClick={(e) =>  сhangeСategory(e) & setNewPosts(false)}>
+        <li onClick={(e) =>  сhangeСategory(e) & setNewPosts(true)}>
           <Car />
           <p>Авто</p>
           <Chevron className={s.chevron} />
         </li>
-        <li onClick={(e) =>  сhangeСategory(e) & setNewPosts(false)}>
+        <li onClick={(e) =>  сhangeСategory(e) & setNewPosts(true)}>
           <Game />
           <p>Видеоигры</p>
           <Chevron className={s.chevron} />

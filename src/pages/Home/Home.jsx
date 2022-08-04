@@ -24,7 +24,7 @@ const Home = () => {
       } else if(category == 'Популярное') {
         return sortedPosts;
       } if (category == 'Новое') {
-        return post;
+        return posts.items;
       }
       else {
         return false;
