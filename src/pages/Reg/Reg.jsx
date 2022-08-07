@@ -86,7 +86,7 @@ const Reg = () => {
             <input 
               type='url' 
               placeholder='url' 
-              {...register('avatarURL', {required: 'Введите ссылку на ваш аватар'})}
+              {...register('avatarURL')}
             />
             <p>{errors.email?.message}</p>
           </div>
